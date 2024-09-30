@@ -1,0 +1,31 @@
+//Configurando GitHub
+git config --global user.name "Nombre"
+git config --global user.email Email
+git config --global core.editor "code --wait" : Esta terminal esperara al editor de codigo para volver
+git config --global -e : Crea el archivo de configuracion
+git config --global core.autocrlf true : En Windows
+git config --global core.autocrlf input : En Mac
+git config --global -h : Atajos de configuraciones
+git congig --list
+
+ls : Para ver el listado de carpetas
+ls -a : Para ver los archivos ocultos
+cd "Nombre de Carpeta" : Moverse dentro de las carpetas
+pwd : Para saber en que carpeta estamos
+cd .. : Para salir de la carpeta
+mkdir "Nombre del proyecto sin comillas" : Crear nuevo directorio
+
+
+git init : Iniciar el repositorio en GitHub en la carpeta en la que nos encontramos
+code . : Iniciar Visual desde la terminal
+git add . : Agrega los archivos (todos)
+git commit -m "Comentario"
+git status : Para saber el estado
+git status -s : Para saber el estado mas simplificado
+git log --oneline: Para saber las modificaciones
+git branch : Nos dira en que rama estamos
+git diff : Para ver las modificaciones
+git checkout -b "Nombre de rama nueva" : Creacion de un nuevo branch
+git checkout master : Volvemos a la rama "master"
+git merge "Nombre de la rama a combinar con la master" : Combinar ramas
+git pull : Traernos los cambios
