@@ -30,3 +30,28 @@ git checkout master : Volvemos a la rama "master"
 git merge "Nombre de la rama a combinar con la master" : Combinar ramas
 git push : Compartir cambios 
 git pull : Traernos los cambios
+git tag: Etiquetar commits
+-git checkout "etiqueta" : Movernos entre los commits
+git switch "master" "nueva rama" : Navegar entre ramas localmente
+git stash : Commit termporal del que nadie se entera (Desaparece temporalmente)
+git stash pop : Recupera el commit temporal para seguir trabajando
+
+//En powershell
+git rm --cached "Nombre del archivo" : Para sacar del stage
+
+//Paso a Paso
+-Creamos la carpeta nueva con el nombre del proyecto y la abrimos con Visual
+-Escribimos el siguiente comando:
+git init
+-Creamos nuestro repositorio en Github y obtenemos la siguiente linea "ejemplo"
+git remote add origin https://github.com/bypdiaz/practica-git-push-pull.git
+-Escribimos el siguiente comando:
+git push origin master //Segun sergie por unica vez luego solo sera "git push"
+/*Con estos pasos hemos subido nuestro repositorio*/
+
+//Traer cambios a nosotros
+git pull //Si surge error de branch debemos escribir la siguiente linea de codigo
+git brunch -u origin/master
+nuevamente "git pull"
+/*Podemos agregar el "-u" en el primer "push" para evitar este error
+git push -u origin master
