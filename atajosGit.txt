@@ -28,4 +28,5 @@ git diff : Para ver las modificaciones
 git checkout -b "Nombre de rama nueva" : Creacion de un nuevo branch
 git checkout master : Volvemos a la rama "master"
 git merge "Nombre de la rama a combinar con la master" : Combinar ramas
+git push : Compartir cambios 
 git pull : Traernos los cambios
